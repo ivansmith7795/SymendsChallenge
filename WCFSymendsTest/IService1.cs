@@ -9,7 +9,7 @@ using System.IO;
 
 namespace WCFSymendsTest
 {
-    // WCF REST service for processing SMS text messages and reversing text order
+    // WCF REST service for processing SMS text messages and reversing text order test
     [ServiceContract]
     public interface IService1
     {
