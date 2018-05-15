@@ -16,7 +16,7 @@ namespace WCFSymendsTest
     {
         public void ProcessMessage(Stream TwilioResponse)
         {
-           //Lets open our plaintext stream
+           //Lets open our plaintext stream test
             StreamReader messageReader = new StreamReader(TwilioResponse);
             String rawBody = messageReader.ReadToEnd();
 
