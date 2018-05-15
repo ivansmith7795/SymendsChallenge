@@ -20,7 +20,7 @@ namespace WCFSymendsTest
             StreamReader messageReader = new StreamReader(TwilioResponse);
             String rawBody = messageReader.ReadToEnd();
 
-            NameValueCollection qs = HttpUtility.ParseQueryString(rawBody);
+            NameValueCollection qs = HttpUtility.ParseQueryString(rawBody); 
             string From = qs["From"];
             string Body = qs["Body"];
 
