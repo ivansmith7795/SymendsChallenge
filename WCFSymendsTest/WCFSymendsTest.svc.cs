@@ -24,6 +24,8 @@ namespace WCFSymendsTest
             string From = qs["From"];
             string Body = qs["Body"];
 
+
+
             WebOperationContext.Current.OutgoingRequest.Accept = "text/xml";
             WebOperationContext.Current.OutgoingResponse.Headers.Add("Access-Control-Allow-Origin", "*");
 
