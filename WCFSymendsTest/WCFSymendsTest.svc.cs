@@ -16,15 +16,13 @@ namespace WCFSymendsTest
     {
         public void ProcessMessage(Stream TwilioResponse)
         {
-           
+           //Lets open our plaintext stream
             StreamReader messageReader = new StreamReader(TwilioResponse);
             String rawBody = messageReader.ReadToEnd();
 
             NameValueCollection qs = HttpUtility.ParseQueryString(rawBody); 
             string From = qs["From"];
             string Body = qs["Body"];
-
-
 
             WebOperationContext.Current.OutgoingRequest.Accept = "text/xml";
             WebOperationContext.Current.OutgoingResponse.Headers.Add("Access-Control-Allow-Origin", "*");
