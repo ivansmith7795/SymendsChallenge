@@ -24,8 +24,8 @@ namespace WCFSymendsTest
             message.message_out = ReverseIt(Body).ToString();
             message.Timestamp = DateTime.Now;
 
-            var accountSid = "ACa3955b3a8072e7e0d5efd4e181ccd729";
-            var authToken = "4c9c9b0f6095d2954cfaec8aa48e28c2";
+            var accountSid = "tokenID";
+            var authToken = "tokenAuth";
 
             TwilioClient.Init(accountSid, authToken);
 
